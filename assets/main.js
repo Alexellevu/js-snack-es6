@@ -3,20 +3,26 @@
 //peso.
 //Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
 var bici = [
-    bici1 = {nome: 'santa cruz', peso:10},
-    bici2 = {nome: 'trek', peso:11},
-    bici3 = {nome:'merida', peso:9},
-    bici4 = {nome:'kona', peso:12},
-    bici5 = {nome:'giant', peso: 8}
+    {nome: 'santa cruz', peso:6},
+    {nome: 'trek', peso:11},
+    {nome:'merida', peso:7},
+    {nome:'kona', peso:12},
+    {nome:'giant', peso: 8}
 ];
-console.log(bici1.peso);
 
-/* var pesi =[];
+console.log(bici);
+var pesi =[];
 for(var i = 0; i <bici.length;i++){
-    console.log(bici.peso[i]);
-   pesi.push(bici.peso[i]);
+    console.log(bici[i].peso);
+   pesi.push(bici[i].peso);
 }
 console.log(pesi);
+var min =pesi[0];
+for(var i=0; i<pesi.length; i++){
+    
+    if(pesi[i] <= min) 
+    min = pesi[i];
 
-/* var min = Math.min(bici.peso);
-console.log(min); */
+}
+console.log(min);
+
