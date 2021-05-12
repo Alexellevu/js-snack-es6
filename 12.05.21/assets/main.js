@@ -4,12 +4,12 @@
 //:collisione: Usiamo i nuovi metodi degli array foreach o filter.
 
 const array = [1,2,35,41,18,10,30,40];
-var a = 5;
+let a = 1;
 const b = 6 ;
 
 const arrayFinale =[];
 array.forEach((element,index) => {
-    while(a <= b){
+    while(a < b){
     arrayFinale.push(array[a]);
     a++
     }
