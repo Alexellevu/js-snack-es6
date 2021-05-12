@@ -8,14 +8,21 @@ let a = 1;
 const b = 6 ;
 
 const arrayFinale =[];
-array.forEach((element,index) => {
+/* array.forEach((element,index) => {
     while(a < b){
     arrayFinale.push(array[a]);
-    a++
+    a++;
     }
 
 }
-
 ); 
+console.log(arrayFinale); */
+
+const arrayfilter = array.filter((a) => {
+    while(a < b){
+        arrayFinale.push(array[a]);
+        a++;
+    }
+});
 
 console.log(arrayFinale);
